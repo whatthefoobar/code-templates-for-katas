@@ -19,9 +19,9 @@ describe("Kata class", function () {
   });
   it("should return 10!", function () {
     var kata = new Kata();
-    var returnValue = kata.fizzBuzz(10);
+    var returnValue = kata.fizzBuzz(11);
 
-    expect(returnValue).to.equal("10");
+    expect(returnValue).to.equal("11");
   });
 
   it("should return Fizz if divisible by 3!", function () {
@@ -29,5 +29,11 @@ describe("Kata class", function () {
     var returnValue = kata.fizzBuzz(12);
 
     expect(returnValue).to.equal("Fizz");
+  });
+  it("should return Buzz if divisible by 5!", function () {
+    var kata = new Kata();
+    var returnValue = kata.fizzBuzz(20);
+
+    expect(returnValue).to.equal("Buzz");
   });
 });
