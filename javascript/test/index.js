@@ -42,4 +42,10 @@ describe("Kata class", function () {
 
     expect(returnValue).to.equal("FizzBuzz");
   });
+  it("should return FizzBuzz if divisible by 3 and 5!", function () {
+    var kata = new Kata();
+    var returnValue = kata.fizzBuzz(30);
+
+    expect(returnValue).to.equal("FizzBuzz");
+  });
 });
