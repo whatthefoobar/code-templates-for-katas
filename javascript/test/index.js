@@ -5,6 +5,12 @@ var { describe, it } = require("mocha");
 const Kata = require("../src/index");
 
 describe("Kata class", function () {
+  it("should return null if num entered is null", function () {
+    var kata = new Kata();
+    var returnValue = kata.fizzBuzz(null);
+
+    expect(returnValue).to.equal(null);
+  });
   it("should return 1!", function () {
     var kata = new Kata();
     var returnValue = kata.fizzBuzz(1);
