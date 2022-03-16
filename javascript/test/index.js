@@ -11,4 +11,23 @@ describe("Kata class", function () {
 
     expect(returnValue).to.equal("1");
   });
+  it("should return 7!", function () {
+    var kata = new Kata();
+    var returnValue = kata.fizzBuzz(7);
+
+    expect(returnValue).to.equal("7");
+  });
+  it("should return 10!", function () {
+    var kata = new Kata();
+    var returnValue = kata.fizzBuzz(10);
+
+    expect(returnValue).to.equal("10");
+  });
+
+  it("should return Fizz if divisible by 3!", function () {
+    var kata = new Kata();
+    var returnValue = kata.fizzBuzz(12);
+
+    expect(returnValue).to.equal("Fizz");
+  });
 });

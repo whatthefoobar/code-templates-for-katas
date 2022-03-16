@@ -2,7 +2,8 @@
 
 class Kata {
   fizzBuzz(num) {
-    return "1";
+    if (num % 3 == 0) return "Fizz";
+    return num.toString();
   }
 }
 
