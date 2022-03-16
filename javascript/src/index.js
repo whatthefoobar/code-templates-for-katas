@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 class Kata {
-  deleteMe() {
-    return 'hello!';
+  fizzBuzz(num) {
+    return "1";
   }
 }
 
